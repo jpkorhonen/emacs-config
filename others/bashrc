@@ -85,14 +85,3 @@ function prompt_func() {
 
 PROMPT_COMMAND=prompt_func
 
-export VAGRANT_HOME=/virtual/users/$USER/vagrant
-
-if [ ! -d $VAGRANT_HOME ]; then
-    mkdir -p $VAGRANT_HOME
-fi
-
-if [ ! -d $VAGRANT_HOME ]; then
-    mkdir -p /virtual/users/$USER/vboxvms
-fi
-
-VBoxManage setproperty machinefolder /virtual/users/$USER/vboxvms
