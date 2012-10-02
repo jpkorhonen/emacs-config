@@ -58,3 +58,19 @@
 ;; and load it
 (require 'feature-mode)
 (add-to-list 'auto-mode-alist '("\.feature$" . feature-mode))
+
+;; Rinari
+;;
+;; Install
+;; cd ~/.emacs.d
+;; git clone https://github.com/eschulte/rinari.git
+;; cd rinari
+;; git submodule init
+;; git submodule update
+
+;; Interactively Do Things (highly recommended, but not strictly required)
+(require 'ido)
+(ido-mode t)
+
+(add-to-list 'load-path "~/.emacs.d/rinari")
+(require 'rinari)
