@@ -1,3 +1,3 @@
 
 install: 
-	ln -s ~/.emacs/emacs ~/.emacs
+	ln -s ~/.emacs.d/emacs ~/.emacs
