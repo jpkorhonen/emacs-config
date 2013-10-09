@@ -3,7 +3,7 @@
 
 ;; https://github.com/defunkt/coffee-mode.git
 ;; Add mode for CoffeeScript
-(add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
+(add-to-list 'load-path "~/.emacs.d/coffee-mode")
 (require 'coffee-mode)
 
 (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
