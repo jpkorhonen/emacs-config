@@ -88,3 +88,11 @@
 ;;  nxml-degraded t)
 ;;(add-to-list 'auto-mode-alist '("\\.html\\.erb\\'" . eruby-nxhtml-mumamo))
 ;;
+;; Turns on flymake for all files which have a flymake mode
+(add-hook 'find-file-hook 'flymake-find-file-hook)
+
+(add-to-list 'load-path "/home/opinsys/.emacs.d/jshint-mode")
+(require 'flymake-jshint)
+(add-hook 'javascript-mode-hook
+    (lambda () (flymake-mode t)))
+
