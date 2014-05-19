@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo apt-get install curl make git emacs
+sudo apt-get install curl make git emacs emacs-goodies-el
 
 mv ~/.emacs.d  ~/.backup_emacs.d
 mv ~/.emacs  ~/.backup_emacs
