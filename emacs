@@ -84,3 +84,6 @@
 (add-hook 'javascript-mode-hook
     (lambda () (flymake-mode t)))
 
+(require 'color-theme)
+    (color-theme-initialize)
+    (color-theme-robin-hood)
